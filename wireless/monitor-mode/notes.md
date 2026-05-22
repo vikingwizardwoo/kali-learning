@@ -43,3 +43,20 @@ sudo service NetworkManager restart
 - Aircrack-ng documentation: https://www.aircrack-ng.org/documentation.html
 ## Session Log
 - 2026-05-21 — Created repo, set up folder structure, wrote monitor mode notes
+## airodump-ng Basic Capture
+### Command
+```bash
+sudo airodump-ng wlan0mon
+```
+### Key columns
+- BSSID: Router MAC address
+- PWR: Signal strength (closer to 0 = stronger)
+- CH: WiFi channel
+- ENC: Encryption type (WPA2, WPA3, OPN)
+- ESSID: Network name
+
+### Security observations
+- OPN networks have zero encryption — all traffic visible
+- Hidden SSIDs (length: 0) are still detected
+- IoT devices often have weak or no security
+- WPA3 is more secure than WPA2
