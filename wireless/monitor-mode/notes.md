@@ -41,3 +41,5 @@ sudo service NetworkManager restart
 
 ## Resources
 - Aircrack-ng documentation: https://www.aircrack-ng.org/documentation.html
+## Session Log
+- 2026-05-21 — Created repo, set up folder structure, wrote monitor mode notes
